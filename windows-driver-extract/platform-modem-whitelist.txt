@@ -1,0 +1,37 @@
+ThinkPad X13 Gen 3
+USB\VID_2C7C&PID_030A
+USB\VID_2C7C&PID_030C
+VersaPro
+ThinkPad X13 Gen 3a
+ThinkPad T14s Gen 3
+ThinkPad T14s Gen 3a
+ThinkPad T14 Gen 3
+ThinkPad P14s Gen 3
+ThinkPad T14 Gen 3a
+ThinkPad T16 Gen 1
+ThinkPad P16s Gen 1
+ThinkPad T16 Gen 1a
+ThinkPad P16s Gen 1a
+ThinkPad Z13 Gen 1
+ThinkPad Z16 Gen 1
+ThinkPad X13 Yoga Gen 3
+ThinkPad L13 Gen 3i
+ThinkPad L13 Yoga Gen 3i
+ThinkPad S2 Gen 7i
+ThinkPad L13 Gen 3a
+ThinkPad L13 Yoga Gen 3a
+ThinkPad S2 Gen 7a
+ThinkPad S2 Yoga Gen 7a
+ThinkPad L14 Gen 3
+ThinkPad L14 Gen 3a
+ThinkPad L15 Gen 3
+ThinkPad L15 Gen 3a
+ThinkEdge SE10
+USB\VID_2C7C&PID_0311
+ThinkPad T14 Gen 4
+USB\VID_2C7C&PID_0313
+ThinkPad P14s Gen 4
+ThinkPad T16 Gen 2
+USB\VID_2C7C&PID_0314
+ThinkPad P16s Gen 2
+CTaskAuthModule::doJob

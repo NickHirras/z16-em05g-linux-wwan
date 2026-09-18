@@ -1,0 +1,84 @@
+;
+;       Modem Auth Service EM05G
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider    = %ProviderName%
+DriverVer   = 05/11/2023, 5.0.0.17
+CatalogFile = ModemAuthServiceEM05G.cat
+ExtensionId = {8C4A0E5C-B397-44D8-8544-590E38D4FE79}
+PnpLockDown = 1
+
+[DestinationDirs]
+ModemAuthSVC_EXE_FILE = 11
+
+[Manufacturer]
+%CompanyName% = DeviceExtensions,NTamd64.10.0...16257   
+
+[DeviceExtensions.NTamd64.10.0...16257]
+%Quectel% = QuectelInstall, USB\VID_2C7C&PID_030A&MI_02
+%Quectel% = QuectelInstall, USB\VID_2C7C&PID_030C&MI_02
+%Quectel% = QuectelInstall, USB\VID_2C7C&PID_0313&MI_02
+%Quectel% = QuectelInstall, USB\VID_2C7C&PID_0314&MI_02
+%Quectel% = QuectelInstall, USB\VID_2C7C&PID_0311&MI_02
+
+[SourceDisksNames]
+1 = %Disk1%
+
+[SourceDisksFiles]
+"ModemAuthServiceEM05G.exe" = 1
+
+
+[QuectelInstall]
+CopyFiles = ModemAuthSVC_EXE_FILE
+
+
+[ModemAuthSVC_EXE_FILE]
+"ModemAuthServiceEM05G.exe",,,0x0001002C
+
+[QuectelInstall.Services]
+AddService = QuectelModeAuthSVC,0x00000800,ModeAuthServiceInst
+
+;==========================================
+; Uninstall
+;==========================================
+[DefaultUninstall.Services]
+DelService = QuectelModeAuthSVC,0x200
+
+
+[ModeAuthServiceInst]
+DisplayName     = %ServiceName%
+Description     = %ServiceDesc%
+ServiceType     = 0x10
+StartType       = %SERVICE_AUTO_START%
+ErrorControl    = %SERVICE_ERROR_NORMAL%
+ServiceBinary   = %11%\ModemAuthServiceEM05G.exe
+LoadOrderGroup  = "File System"
+;AddReg          = SPRServiceAddReg
+
+[Strings]
+ProviderName = "Quectel"
+CompanyName  = "Quectel"
+Quectel		 = "Quectel"
+ServiceName      = "Quectel Modem Auth Service(EM05G)"
+
+Disk1            = "ModemAuth"
+ServiceDesc      = "Quectel Modem Auth Service(EM05G)"
+ServiceMonDesc   = "Quectel Modem Auth Service(EM05G)"
+
+SERVICE_BOOT_START      = 0x0 
+SERVICE_SYSTEM_START    = 0x1 
+SERVICE_AUTO_START      = 0x2 
+SERVICE_DEMAND_START    = 0x3 
+SERVICE_DISABLED        = 0x4 
+
+SERVICE_ERROR_IGNORE    = 0x0 
+SERVICE_ERROR_NORMAL    = 0x1 
+SERVICE_ERROR_SEVERE    = 0x2 
+SERVICE_ERROR_CRITICAL  = 0x3
+
+FLG_ADDREG_BINVALUETYPE = 0x00000001
+FLG_ADDREG_TYPE_DWORD   = 0x00010001

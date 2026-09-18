@@ -1,0 +1,33 @@
+CDeviceHelper::IsQuectelMBIMDevcieExist
+CFUN = %d, cfun 1,will do nothing
+CTaskAuthModule::IsSupportModem
+CTaskAuthModule::IsSupportPlatform
+CTaskAuthModule::VerifyPlatform
+Current CFUN = %d (4 QUERY_CFUN_0)
+GetDeviceService() failed. qbi_uuid ={11223344-5566-7788-99AA-BBCCDDEEFF11}
+IsQuectelMBIMDevcieExist %s %s 
+MBIM Device is not quectel device.
+MBIM Modem is not exist!
+SET MBIM FUN SUCCESS!
+SMBIOS system project_name = %s
+SMBIOS system project_name = %s 
+SMBIOS system version = %s, Device modem_id = %s
+Systeminfo::isFccMode
+USB\VID_2C7C&PID_030A
+USB\VID_2C7C&PID_030C
+USB\VID_2C7C&PID_0311
+USB\VID_2C7C&PID_0313
+USB\VID_2C7C&PID_0314
+VID_2C7C&PID_030A&MI_00;VID_2C7C&PID_030C&MI_00;VID_2C7C&PID_0313&MI_00;VID_2C7C&PID_0314&MI_00;VID_2C7C&PID_0311&MI_00
+VerifyPlatform pass
+VerifyPlatform return = %s 
+bios_data->SMBIOSMajorVersion = %d,bios_data->SMBIOSMinorVersion = %d,bios_data->Used20CallingMethod = %d,bios_data->DmiRevision = %d, bios_data->Length = %d
+do not find auth hwid ,return false
+find MBIM device : %s
+find auth hwid : %s,return true
+isFccMode = false  , exit
+isFccMode pass
+not in platform list. VerifyPlatform return = true 
+query command complete. cfun mode = %d.
+set cfun successful.
+set cfun value: %d.
